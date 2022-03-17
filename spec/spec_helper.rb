@@ -8,6 +8,7 @@ require 'pry'
 require 'pry-remote'
 require 'byebug'
 require 'simplecov'
+require 'faraday'
 
 SimpleCov.minimum_coverage 100
 SimpleCov.use_merging false
@@ -36,9 +37,9 @@ VCR.configure do |c|
   #the directory where your cassettes will be saved
   c.cassette_library_dir = 'spec/vcr'
   c.default_cassette_options = { match_requests_on: %i[method uri path body headers] }
-
+  # c.debug_logger = $stderr
   # your HTTP request service.
-  c.hook_into :webmock
+  c.hook_into :faraday
   c.configure_rspec_metadata!
   c.before_http_request do |request|
     if request.uri == 'http://fake.url'

@@ -1,5 +1,4 @@
 RSpec.describe RickAndMortyDubDub::Character do
-
   describe "all characters", vcr: { cassette_name: "lib/characters/all_characters" } do
     let(:instance) { described_class.new }
     let(:result) { instance.all }
@@ -9,14 +8,23 @@ RSpec.describe RickAndMortyDubDub::Character do
   end
 
   describe "finder characters" do
-    context "single character", vrc: { cassette_name: "lib/characters/single_character" } do
-      let(:instance) { described_class.new(id: 1) }
-      let(:result) { instance.finder }
-      it { expect(result[:body].size).to eq(1) }
+    before { @params = nil }
+    let(:instance) { described_class.new(id: @params) }
+    let(:result) { instance.finder }
+    it "single character" do
+      @params = 1
+      VCR.use_cassette("lib/characters/single_character") do
+        expect(result[:body]).to be_a_kind_of(Hash)
+        expect(result[:body]["id"]).to eq(1)
+      end
     end
 
-    context "multiple characters" do
-
+    it "multiple characters" do
+      @params = [1, 2]
+      VCR.use_cassette("lib/characters/multiple_characters") do
+        expect(result[:body]).to be_a_kind_of(Array)
+        expect(result[:body].size).to eq(2)
+      end
     end
   end
 end

@@ -9,42 +9,37 @@ http_interactions:
     headers:
       User-Agent:
       - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
+      access-control-allow-origin:
       - "*"
-      Age:
-      - '4578'
-      Cache-Control:
-      - max-age=259200
-      - public
-      Content-Length:
+      age:
+      - '1497'
+      cache-control:
+      - max-age=259200, public
+      content-length:
       - '1454'
-      Content-Type:
+      content-type:
       - application/json; charset=utf-8
-      Date:
-      - Wed, 16 Mar 2022 00:28:45 GMT
-      Etag:
+      date:
+      - Thu, 17 Mar 2022 02:01:54 GMT
+      etag:
       - W/"4c28-8Xn6OSgPYZqE/r+q8L2TTeK0Efo"
-      Expires:
-      - Sat, 19 Mar 2022 00:28:45 GMT
-      Server:
+      expires:
+      - Sun, 20 Mar 2022 02:01:54 GMT
+      server:
       - Netlify
-      Vary:
+      vary:
       - Accept-Encoding
-      X-Nf-Request-Id:
-      - 01FY86CRRGQ44S8P2649S2JW8X
-      X-Powered-By:
+      x-nf-request-id:
+      - 01FYAV60TTRBVA8YY8G6KYJYB8
+      x-powered-by:
       - Express
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"info":{"count":826,"pages":42,"next":"https://rickandmortyapi.com/api/character?page=2","prev":null},"results":[{"id":1,"name":"Rick
         Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth
         (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Citadel
@@ -93,5 +88,5 @@ http_interactions:
         in my Eyes Johnson","status":"unknown","species":"Human","type":"Human with
         ants in his eyes","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Interdimensional
         Cable","url":"https://rickandmortyapi.com/api/location/6"},"image":"https://rickandmortyapi.com/api/character/avatar/20.jpeg","episode":["https://rickandmortyapi.com/api/episode/8"],"url":"https://rickandmortyapi.com/api/character/20","created":"2017-11-04T22:34:53.659Z"}]}'
-  recorded_at: Wed, 16 Mar 2022 01:45:03 GMT
+  recorded_at: Thu, 17 Mar 2022 02:26:51 GMT
 recorded_with: VCR 6.0.0
