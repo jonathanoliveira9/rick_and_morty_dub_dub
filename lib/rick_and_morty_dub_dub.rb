@@ -3,6 +3,8 @@
 require_relative "rick_and_morty_dub_dub/version"
 require_relative "rick_and_morty_dub_dub/base"
 require_relative "rick_and_morty_dub_dub/character"
+require_relative "rick_and_morty_dub_dub/location"
+
 require "faraday"
 
 module RickAndMortyDubDub
