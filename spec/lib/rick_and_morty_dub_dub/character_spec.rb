@@ -7,6 +7,18 @@ RSpec.describe RickAndMortyDubDub::Character do
     it { expect(result[:status]).to eq(200) }
   end
 
+  describe "pagination", vcr: { cassette_name: "lib/characters/pagination" } do
+    before { @params = nil }
+    let(:instance) { described_class.new(@params) }
+    let(:result) { instance.all }
+
+    it "when 19 page" do
+      @params = { page: 19 }
+      expect(result[:body]["info"]["prev"]).to eq("https://rickandmortyapi.com/api/character/?page=18")
+      expect(result[:body]["info"]["next"]).to eq("https://rickandmortyapi.com/api/character/?page=20")
+    end
+  end
+
   describe "finder characters" do
     before { @params = nil }
     let(:instance) { described_class.new(@params) }

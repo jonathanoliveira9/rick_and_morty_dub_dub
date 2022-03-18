@@ -15,7 +15,9 @@ module RickAndMortyDubDub
     end
 
     def all
-      request = conn.get(current_resource)
+      page = ""
+      page = params.select { |_| _.eql?(:page) }.map { |k, v| "#{k}=#{v}" }.join if params
+      request = conn.get("#{current_resource}/?#{page}")
       message_api(request)
     end
 
