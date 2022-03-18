@@ -25,6 +25,11 @@ module RickAndMortyDubDub
       message_api(request)
     end
 
+    def filter
+      request = conn.get("#{current_resource}/?#{params.map { |k, v| "#{k}=#{v}" }.join("&")}")
+      message_api(request)
+    end
+
     private
 
     def current_resource

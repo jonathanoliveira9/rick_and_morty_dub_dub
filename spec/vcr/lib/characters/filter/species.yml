@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rickandmortyapi.com/api/character/?species=humanoid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - "*"
+      age:
+      - '0'
+      cache-control:
+      - max-age=259200, public
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 18 Mar 2022 02:36:08 GMT
+      etag:
+      - W/"26e0-j2Bqt66b+T1boU7NEWYk1x+bRWU"
+      expires:
+      - Mon, 21 Mar 2022 02:36:08 GMT
+      server:
+      - Netlify
+      vary:
+      - Accept-Encoding
+      x-nf-request-id:
+      - 01FYDE3QEWT09RF7JCQA25TBDP
+      x-powered-by:
+      - Express
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"info":{"count":68,"pages":4,"next":"https://rickandmortyapi.com/api/character/?page=2&species=humanoid","prev":null},"results":[{"id":21,"name":"Aqua
+        Morty","status":"unknown","species":"Humanoid","type":"Fish-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/21.jpeg","episode":["https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/22"],"url":"https://rickandmortyapi.com/api/character/21","created":"2017-11-04T22:39:48.055Z"},{"id":22,"name":"Aqua
+        Rick","status":"unknown","species":"Humanoid","type":"Fish-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/22.jpeg","episode":["https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/22","created":"2017-11-04T22:41:07.171Z"},{"id":65,"name":"Chris","status":"Alive","species":"Humanoid","type":"Microverse
+        inhabitant","gender":"Male","origin":{"name":"Rick''s Battery Microverse","url":"https://rickandmortyapi.com/api/location/24"},"location":{"name":"Rick''s
+        Battery Microverse","url":"https://rickandmortyapi.com/api/location/24"},"image":"https://rickandmortyapi.com/api/character/avatar/65.jpeg","episode":["https://rickandmortyapi.com/api/episode/17"],"url":"https://rickandmortyapi.com/api/character/65","created":"2017-11-30T11:02:41.935Z"},{"id":70,"name":"Concerto","status":"Dead","species":"Humanoid","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"unknown","url":""},"image":"https://rickandmortyapi.com/api/character/avatar/70.jpeg","episode":["https://rickandmortyapi.com/api/episode/24"],"url":"https://rickandmortyapi.com/api/character/70","created":"2017-11-30T11:31:41.926Z"},{"id":85,"name":"Cyclops
+        Morty","status":"Alive","species":"Humanoid","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/85.jpeg","episode":["https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/85","created":"2017-11-30T20:49:52.133Z"},{"id":86,"name":"Cyclops
+        Rick","status":"Dead","species":"Humanoid","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/86.jpeg","episode":["https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/86","created":"2017-11-30T20:53:10.382Z"},{"id":108,"name":"Dr.
+        Xenon Bloom","status":"Dead","species":"Humanoid","type":"Amoeba-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Anatomy
+        Park","url":"https://rickandmortyapi.com/api/location/5"},"image":"https://rickandmortyapi.com/api/character/avatar/108.jpeg","episode":["https://rickandmortyapi.com/api/episode/3"],"url":"https://rickandmortyapi.com/api/character/108","created":"2017-12-26T13:14:12.157Z"},{"id":119,"name":"Evil
+        Rick","status":"Dead","species":"Humanoid","type":"Robot","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/119.jpeg","episode":["https://rickandmortyapi.com/api/episode/10"],"url":"https://rickandmortyapi.com/api/character/119","created":"2017-12-26T16:17:16.472Z"},{"id":152,"name":"Hammerhead
+        Morty","status":"unknown","species":"Humanoid","type":"Hammerhead-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/152.jpeg","episode":["https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/22"],"url":"https://rickandmortyapi.com/api/character/152","created":"2017-12-29T15:20:16.842Z"},{"id":197,"name":"Kyle","status":"Dead","species":"Humanoid","type":"Miniverse
+        inhabitant","gender":"Male","origin":{"name":"Zeep Xanflorp''s Miniverse","url":"https://rickandmortyapi.com/api/location/49"},"location":{"name":"Kyle''s
+        Teenyverse","url":"https://rickandmortyapi.com/api/location/50"},"image":"https://rickandmortyapi.com/api/character/avatar/197.jpeg","episode":["https://rickandmortyapi.com/api/episode/17"],"url":"https://rickandmortyapi.com/api/character/197","created":"2017-12-30T12:39:09.025Z"},{"id":198,"name":"Lady
+        Katana","status":"Dead","species":"Humanoid","type":"Cyborg","gender":"Female","origin":{"name":"unknown","url":""},"location":{"name":"Dorian
+        5","url":"https://rickandmortyapi.com/api/location/29"},"image":"https://rickandmortyapi.com/api/character/avatar/198.jpeg","episode":["https://rickandmortyapi.com/api/episode/25"],"url":"https://rickandmortyapi.com/api/character/198","created":"2017-12-30T12:43:37.571Z"},{"id":205,"name":"Little
+        Dipper","status":"Alive","species":"Humanoid","type":"Tinymouth","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Interdimensional
+        Cable","url":"https://rickandmortyapi.com/api/location/6"},"image":"https://rickandmortyapi.com/api/character/avatar/205.jpeg","episode":["https://rickandmortyapi.com/api/episode/19"],"url":"https://rickandmortyapi.com/api/character/205","created":"2017-12-30T13:03:12.366Z"},{"id":206,"name":"Lizard
+        Morty","status":"Alive","species":"Humanoid","type":"Lizard-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel
+        of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/206.jpeg","episode":["https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/206","created":"2017-12-30T13:06:09.094Z"},{"id":225,"name":"Michael
+        Thompson","status":"Alive","species":"Humanoid","type":"Conjoined twin","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Interdimensional
+        Cable","url":"https://rickandmortyapi.com/api/location/6"},"image":"https://rickandmortyapi.com/api/character/avatar/225.jpeg","episode":["https://rickandmortyapi.com/api/episode/19"],"url":"https://rickandmortyapi.com/api/character/225","created":"2017-12-30T15:59:31.558Z"},{"id":230,"name":"Morty
+        Jr.","status":"Alive","species":"Humanoid","type":"Human Gazorpian","gender":"Male","origin":{"name":"Earth
+        (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"location":{"name":"Earth
+        (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/230.jpeg","episode":["https://rickandmortyapi.com/api/episode/7"],"url":"https://rickandmortyapi.com/api/character/230","created":"2017-12-30T16:20:51.391Z"},{"id":242,"name":"Mr.
+        Meeseeks","status":"unknown","species":"Humanoid","type":"Meeseeks","gender":"Male","origin":{"name":"Mr.
+        Meeseeks Box","url":"https://rickandmortyapi.com/api/location/53"},"location":{"name":"Earth
+        (Fascist Dimension)","url":"https://rickandmortyapi.com/api/location/77"},"image":"https://rickandmortyapi.com/api/character/avatar/242.jpeg","episode":["https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/32"],"url":"https://rickandmortyapi.com/api/character/242","created":"2017-12-30T17:52:12.243Z"},{"id":243,"name":"Mr.
+        Needful","status":"Alive","species":"Humanoid","type":"The Devil","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Earth
+        (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/243.jpeg","episode":["https://rickandmortyapi.com/api/episode/9"],"url":"https://rickandmortyapi.com/api/character/243","created":"2017-12-30T17:54:06.996Z"},{"id":254,"name":"Octopus
+        Man","status":"Alive","species":"Humanoid","type":"Octopus-Person","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Interdimensional
+        Cable","url":"https://rickandmortyapi.com/api/location/6"},"image":"https://rickandmortyapi.com/api/character/avatar/254.jpeg","episode":["https://rickandmortyapi.com/api/episode/19"],"url":"https://rickandmortyapi.com/api/character/254","created":"2017-12-31T13:06:35.982Z"},{"id":264,"name":"Pichael
+        Thompson","status":"Alive","species":"Humanoid","type":"Conjoined twin","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Interdimensional
+        Cable","url":"https://rickandmortyapi.com/api/location/6"},"image":"https://rickandmortyapi.com/api/character/avatar/264.jpeg","episode":["https://rickandmortyapi.com/api/episode/19"],"url":"https://rickandmortyapi.com/api/character/264","created":"2017-12-31T13:44:43.176Z"},{"id":269,"name":"Presidentress
+        of The Mega Gargantuans","status":"Alive","species":"Humanoid","type":"Mega
+        Gargantuan","gender":"Female","origin":{"name":"Mega Gargantuan Kingdom","url":"https://rickandmortyapi.com/api/location/56"},"location":{"name":"Mega
+        Gargantuan Kingdom","url":"https://rickandmortyapi.com/api/location/56"},"image":"https://rickandmortyapi.com/api/character/avatar/269.jpeg","episode":["https://rickandmortyapi.com/api/episode/31"],"url":"https://rickandmortyapi.com/api/character/269","created":"2017-12-31T14:01:44.995Z"}]}'
+  recorded_at: Fri, 18 Mar 2022 02:36:08 GMT
+recorded_with: VCR 6.0.0

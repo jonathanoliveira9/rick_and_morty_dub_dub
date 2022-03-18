@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rickandmortyapi.com/api/character/?type=phone
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - "*"
+      age:
+      - '0'
+      cache-control:
+      - max-age=259200, public
+      content-length:
+      - '379'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 18 Mar 2022 02:37:45 GMT
+      etag:
+      - W/"64b-QLm1ez5JGByAK6PkjD4mREW64Es"
+      expires:
+      - Mon, 21 Mar 2022 02:37:45 GMT
+      server:
+      - Netlify
+      vary:
+      - Accept-Encoding
+      x-nf-request-id:
+      - 01FYDE6PJTBTFQXGBTK80CZ9AE
+      x-powered-by:
+      - Express
+    body:
+      encoding: UTF-8
+      string: '{"info":{"count":3,"pages":1,"next":null,"prev":null},"results":[{"id":404,"name":"Michael
+        Jackson","status":"Alive","species":"Humanoid","type":"Phone-Person","gender":"Male","origin":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"location":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"image":"https://rickandmortyapi.com/api/character/avatar/404.jpeg","episode":["https://rickandmortyapi.com/api/episode/8"],"url":"https://rickandmortyapi.com/api/character/404","created":"2018-04-15T18:01:09.637Z"},{"id":427,"name":"Phone-person","status":"Alive","species":"Humanoid","type":"Phone","gender":"Male","origin":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"location":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"image":"https://rickandmortyapi.com/api/character/avatar/427.jpeg","episode":["https://rickandmortyapi.com/api/episode/10"],"url":"https://rickandmortyapi.com/api/character/427","created":"2018-04-16T21:54:05.375Z"},{"id":428,"name":"Phone-person","status":"Alive","species":"Humanoid","type":"Phone","gender":"Male","origin":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"location":{"name":"Earth
+        (Phone Dimension)","url":"https://rickandmortyapi.com/api/location/72"},"image":"https://rickandmortyapi.com/api/character/avatar/428.jpeg","episode":["https://rickandmortyapi.com/api/episode/10"],"url":"https://rickandmortyapi.com/api/character/428","created":"2018-04-16T21:54:48.372Z"}]}'
+  recorded_at: Fri, 18 Mar 2022 02:37:45 GMT
+recorded_with: VCR 6.0.0
