@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rickandmortyapi.com/api/location/?dimension=Post-Apocalyptic+Dimension
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - "*"
+      age:
+      - '0'
+      cache-control:
+      - max-age=259200, public
+      content-length:
+      - '743'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 18 Mar 2022 21:02:51 GMT
+      etag:
+      - W/"2e7-Am1e7fRoIzE3s/TQWhKY1tGYIhE"
+      expires:
+      - Mon, 21 Mar 2022 21:02:51 GMT
+      server:
+      - Netlify
+      x-nf-request-id:
+      - 01FYFDE6JM9K1GYWA03AWPF56E
+      x-powered-by:
+      - Express
+    body:
+      encoding: UTF-8
+      string: '{"info":{"count":1,"pages":1,"next":null,"prev":null},"results":[{"id":8,"name":"Post-Apocalyptic
+        Earth","type":"Planet","dimension":"Post-Apocalyptic Dimension","residents":["https://rickandmortyapi.com/api/character/25","https://rickandmortyapi.com/api/character/52","https://rickandmortyapi.com/api/character/68","https://rickandmortyapi.com/api/character/110","https://rickandmortyapi.com/api/character/111","https://rickandmortyapi.com/api/character/140","https://rickandmortyapi.com/api/character/156","https://rickandmortyapi.com/api/character/228","https://rickandmortyapi.com/api/character/323","https://rickandmortyapi.com/api/character/342"],"url":"https://rickandmortyapi.com/api/location/8","created":"2017-11-10T13:09:22.551Z"}]}'
+  recorded_at: Fri, 18 Mar 2022 21:02:51 GMT
+recorded_with: VCR 6.0.0
