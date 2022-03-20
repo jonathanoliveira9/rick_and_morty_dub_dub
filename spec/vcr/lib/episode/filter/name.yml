@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rickandmortyapi.com/api/episode/?name=Pilot
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - "*"
+      age:
+      - '0'
+      cache-control:
+      - max-age=259200, public
+      content-length:
+      - '280'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sun, 20 Mar 2022 17:15:18 GMT
+      etag:
+      - W/"479-VS7B3pgNXmA+kG2yKo/W/TIAPTs"
+      expires:
+      - Wed, 23 Mar 2022 17:15:18 GMT
+      server:
+      - Netlify
+      vary:
+      - Accept-Encoding
+      x-nf-request-id:
+      - 01FYM56ZJKEFZ3CH9626Z1DDE4
+      x-powered-by:
+      - Express
+    body:
+      encoding: UTF-8
+      string: '{"info":{"count":1,"pages":1,"next":null,"prev":null},"results":[{"id":1,"name":"Pilot","air_date":"December
+        2, 2013","episode":"S01E01","characters":["https://rickandmortyapi.com/api/character/1","https://rickandmortyapi.com/api/character/2","https://rickandmortyapi.com/api/character/35","https://rickandmortyapi.com/api/character/38","https://rickandmortyapi.com/api/character/62","https://rickandmortyapi.com/api/character/92","https://rickandmortyapi.com/api/character/127","https://rickandmortyapi.com/api/character/144","https://rickandmortyapi.com/api/character/158","https://rickandmortyapi.com/api/character/175","https://rickandmortyapi.com/api/character/179","https://rickandmortyapi.com/api/character/181","https://rickandmortyapi.com/api/character/239","https://rickandmortyapi.com/api/character/249","https://rickandmortyapi.com/api/character/271","https://rickandmortyapi.com/api/character/338","https://rickandmortyapi.com/api/character/394","https://rickandmortyapi.com/api/character/395","https://rickandmortyapi.com/api/character/435"],"url":"https://rickandmortyapi.com/api/episode/1","created":"2017-11-10T12:56:33.798Z"}]}'
+  recorded_at: Sun, 20 Mar 2022 17:15:18 GMT
+recorded_with: VCR 6.0.0
